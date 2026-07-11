@@ -15,16 +15,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://enthecastudios.com"),
   title: "ENTHECA | studios",
   description: "Independent game studio building small, considered experiences.",
   openGraph: {
     title: "ENTHECA | studios",
     description: "Independent game studio building small, considered experiences.",
     url: "https://enthecastudios.com",
-    siteName: "ENTHECA studios",
+    siteName: "ENTHECA Studios",
     images: [
       {
-        url: "/ENTHECAstudios.jpeg",
+        url: "https://enthecastudios.com/ENTHECAstudios.jpeg",
         width: 1200,
         height: 630,
       },
