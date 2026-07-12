@@ -1,3 +1,5 @@
+import { SiInstagram, SiX, SiReddit, SiTiktok, SiYoutube } from "react-icons/si";
+
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -14,6 +16,15 @@ export default function Footer() {
           <a href="/#studio">Studio</a>
           <a href="/#contact">Contact</a>
         </div>
+
+        <div className="footer-socials">
+          <a href="https://instagram.com/enthecastudios" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><SiInstagram /></a>
+          <a href="https://x.com/ENTHECAstudios" target="_blank" rel="noopener noreferrer" aria-label="X"><SiX /></a>
+          <a href="https://reddit.com/u/ENTHECAstudios" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><SiReddit /></a>
+          <a href="https://tiktok.com/@enthecastudios" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><SiTiktok /></a>
+          <a href="https://youtube.com/@ENTHECAstudios" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><SiYoutube /></a>
+        </div>
+
         <div className="footer-copy">© 2026 ENTHECA Studios. All rights reserved.</div>
       </div>
     </footer>
