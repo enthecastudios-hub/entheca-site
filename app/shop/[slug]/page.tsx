@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -28,9 +29,11 @@ export default async function ShopItemPage({ params }: { params: Promise<{ slug:
         <span className="eyebrow"><span className="spark"></span> {item.price}</span>
         <h1 className="detail-heading">{item.title}</h1>
         <p className="detail-tagline">{item.description}</p>
-        <div className={`tile-art detail-image ${item.art}`}></div>
+        <div className={item.images.length ? "tile-art detail-image" : `tile-art detail-image ${item.art}`}>
+          {item.images.length > 0 && <Image src={item.images[0]} alt={item.title} fill style={{ objectFit: "cover" }} />}
+        </div>
         <p className="detail-description">{item.longDescription}</p>
-        <a href="#" className="btn btn-primary">Purchase, {item.price}</a>
+        <a href="#" className="btn btn-primary">On FAB, {item.price}</a>
       </main>
       <Footer />
     </>

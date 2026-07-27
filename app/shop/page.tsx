@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -15,7 +16,9 @@ export default function ShopPage() {
         <div className="shop-grid shop-page-grid">
           {shopItems.map((item) => (
             <Link href={`/shop/${item.slug}`} key={item.slug} className="card">
-              <div className={`tile-art ${item.art}`}></div>
+              <div className={item.images.length ? "tile-art" : `tile-art ${item.art}`}>
+                {item.images.length > 0 && <Image src={item.images[0]} alt={item.title} fill style={{ objectFit: "cover" }} />}
+              </div>
               <h3 className="card-title">{item.title}</h3>
               <p className="card-text">{item.description}</p>
               <div className="card-price">{item.price}</div>

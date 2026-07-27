@@ -15,6 +15,8 @@ export default function Footer() {
           <a href="/#donate">Donate</a>
           <a href="/#studio">Studio</a>
           <a href="/#contact">Contact</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
         </div>
 
         <div className="footer-socials">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { shopItems } from "@/lib/shop-items";
 
@@ -13,7 +14,9 @@ export default function ShopPreview() {
       <div className="shop-grid">
         {preview.map((item) => (
           <Link href={`/shop/${item.slug}`} key={item.slug} className="card">
-            <div className={`tile-art ${item.art}`}></div>
+            <div className={item.images.length ? "tile-art" : `tile-art ${item.art}`}>
+              {item.images.length > 0 && <Image src={item.images[0]} alt={item.title} fill style={{ objectFit: "cover" }} />}
+            </div>
             <h3 className="card-title">{item.title}</h3>
             <p className="card-text">{item.description}</p>
             <div className="card-price">{item.price}</div>
