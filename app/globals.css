@@ -1014,7 +1014,22 @@ body {
   align-items: center;
   text-align: center;
   padding-bottom: 90px;
-  background: radial-gradient(ellipse 50% 60% at 50% 25%, rgba(255, 138, 76, 0.16), transparent 70%);
+  position: relative;
+  isolation: isolate;
+}
+
+/* A soft glow behind the icon that fades out completely, so it has no edges. */
+.mab-hero::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  width: min(760px, 100vw);
+  height: 560px;
+  transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(255, 122, 51, 0.2), rgba(255, 122, 51, 0.06) 55%, transparent);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .mab-icon {
