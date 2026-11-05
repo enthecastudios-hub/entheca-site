@@ -9,7 +9,7 @@ export default function StudioSection() {
         </div>
         <div className="stat-row">
           <div className="stat"><b>4</b><span>years building games</span></div>
-          <div className="stat"><b>20+</b><span>shipped projects</span></div>
+          <div className="stat"><b>25+</b><span>shipped projects</span></div>
           <div className="stat"><b>100%</b><span>direct to you</span></div>
         </div>
       </div>
