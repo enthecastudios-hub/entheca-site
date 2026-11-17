@@ -27,11 +27,12 @@ export default function MeltABitePrivacyPage() {
           <p>Your profile and goals, food diary, saved foods, meals and recipes, water, weight, body measurements, progress photos, workouts and routes, fasting, supplements, drinks, streaks, badges and settings are stored only on your device. We never receive them.</p>
           <p>If you export a backup, MeltABite saves one file to the place you pick, such as Files or iCloud Drive. That file is yours, and Apple&apos;s privacy policy covers iCloud Drive.</p>
           <p>Deleting the app deletes all of this data from your iPhone.</p>
+          <p>If you import your history from MyFitnessPal, MeltABite reads the export files you pick on your iPhone and saves the foods and weigh-ins in the app. Nothing from those files is uploaded.</p>
         </section>
 
         <section className="legal-section">
           <h2>Apple Health</h2>
-          <p>If you turn on Apple Health, MeltABite can read your steps, walking, running and cycling distance, flights climbed, active energy, workouts and sleep. If you turn on &quot;Save to Apple Health&quot;, it also writes your calories, carbs, fat, protein, water, weight and workouts.</p>
+          <p>If you turn on Apple Health, MeltABite can read your steps, walking, running and cycling distance, flights climbed, active energy, workouts, sleep and, if you turn on &quot;Weight from Apple Health&quot;, your weight (for example from a smart scale). If you turn on &quot;Save to Apple Health&quot;, it also writes your calories, carbs, fat, protein, water, weight and workouts.</p>
           <p>Health data is used only to show your progress inside the app. It never leaves your device through us, is never used for advertising, and is never sold or shared with anyone. You can change or remove access at any time in the Health app.</p>
         </section>
 
